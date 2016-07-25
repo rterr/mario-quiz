@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mario Quiz!</title>
+    <meta name="description" content="A quiz about Nintendo's Mario series of video games.">
+    <meta name="author" content="Row and Adam" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="https://necolas.github.io/normalize.css/4.1.1/normalize.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="binding-box">
+        <div class="pages" id="start-page">
+            <img src="images/mushroom.png">
+            <h2>MARIO QUIZ</h2>
+            <p>How much do you know about Nintendo's mustachioed hero and his video game series? Let's find out!</p>
+            <span class="next-question">START</span>
+        </div>
+
+        <div class="pages" id="question-page">
+            <img id="mushroom" src="images/mushroom.png" />
+            <h2>(question placeholder)</h2>
+            <ul>
+                <li><span class="answer-option" id="0">(option 0)</span></li>
+                <li><span class="answer-option" id="1">(option 1)</span></li>
+                <li><span class="answer-option" id="2">(option 2)</span></li>
+                <li><span class="answer-option" id="3">(option 3)</span></li>
+            </ul>
+        </div>
+
+        <div class="pages" id="result-page">
+            <h2 id="right-or-wrong">(right or wrong)</h2>
+            <span>The correct answer is <span id="correct-answer">(correct answer)</span></span>
+            <p id="trivia-text">(trivia text)</p>
+            <span class="next-question">NEXT</span>
+        </div>
+
+        <div class="pages" id="result-final">
+        	<img src="images/star.png">
+            <h2>Quiz complete!</h2>
+            <p>You got <span class="score-counter-number">0</span> out of 5 correct!</p>
+            <span class="new-game">Start a new game?</span>
+        </div>
+
+        <div id="scorebar">
+            <span id="question-counter">Question <span id="question-counter-number">?</span> / 5</span>
+            <span id="score-counter">Score: <span class="score-counter-number">0</span> correct</span>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="app.js"></script>
+    <script src="questions.js"></script>
+</body>
+
+</html>

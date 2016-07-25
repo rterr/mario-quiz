@@ -1,0 +1,151 @@
+body {
+	background-color:gold;
+	font-family:'Roboto', 'sans-serif';
+}
+
+h2 {
+	font-family:'Oswald', 'sans-serif';
+	color:white;
+	-webkit-text-stroke: 1px black;
+	text-shadow:
+		3px 3px 0 #000,
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	font-size:46px;
+	line-height:0px;
+}
+
+.binding-box {
+	width:800px;
+	height:600px;
+	margin: 50px auto;
+	position:relative;
+}
+
+.pages {
+	width:800px;
+	height:600px;
+	position:absolute;
+	box-sizing: border-box;
+	padding:20px;
+	border-radius:20px;
+	border:5px solid white;
+	background-color:orange;
+}
+
+.next-question, .new-game {
+	background-color:dodgerblue;
+	border:2px solid white;
+	border-radius:5px;
+	color:white;
+	padding:10px;
+	font-size:16px;
+	display:inline-block;
+}
+
+.next-question:hover, .new-game:hover {
+	cursor:pointer;
+	background-color:lightskyblue;
+}
+
+#start-page {
+	z-index:4;
+	text-align:center;
+	display:block;
+	padding:50px 140px;
+}
+
+#start-page img, #result-final img {
+	width:300px;
+}
+
+#question-page {
+	z-index:1;
+}
+
+#question-page h2 {
+	box-sizing:border-box;
+	font-size:30px;
+	display:table-cell;
+	vertical-align: middle;
+	height:75px;
+	margin:0px;
+	width: 600px;
+	line-height:34px;
+}
+
+.answer-option {
+	font-size:30px;
+	color:white;
+}
+
+.answer-option:hover {
+	color:coral;
+	cursor:pointer;
+}
+
+#mushroom {
+	height:75px;
+	float:left;
+	margin-right:5px;
+}
+
+#question-page ul {
+	margin-top:20px;
+}
+
+#question-page li {
+	margin-bottom:20px;
+	list-style:none;
+}
+
+#question-page li:before {
+  content: "\2605";
+  margin-right:10px;
+  font-size:25px;
+  color:gold;
+}
+
+
+#result-page {
+	z-index:2;
+	display:none;
+	text-align:center;
+	padding:120px;
+}
+
+#result-page span, #result-final p {
+	font-size:20px;
+	color:white;
+}
+
+#result-final {
+	z-index:4;
+	display:none;
+	text-align:center;
+	padding:50px 140px;
+}
+
+#scorebar {
+	box-sizing: border-box;
+	z-index:3;
+	position:absolute;
+	background-color:dodgerblue;
+	border-radius:20px;
+	padding:10px;
+	bottom:0px;
+	height:50px;
+	width:100%;
+	color:white;
+	font-size:26px;
+}
+
+#question-counter {
+	float:left;
+}
+
+#score-counter {
+	float:right;
+}
