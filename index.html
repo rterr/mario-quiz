@@ -3,6 +3,7 @@
 
 <head>
     <title>Mario Quiz!</title>
+    <meta charset="utf-8">
     <meta name="description" content="A quiz about Nintendo's Mario series of video games.">
     <meta name="author" content="Row and Adam" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -10,6 +11,9 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="questions.js"></script>
 </head>
 
 <body>
@@ -23,7 +27,7 @@
 
         <div class="pages" id="question-page">
             <img id="mushroom" src="images/mushroom.png" />
-            <h2>(question placeholder)</h2>
+            <h2 id="question-text">(question placeholder)</h2>
             <ul>
                 <li><span class="answer-option" id="0">(option 0)</span></li>
                 <li><span class="answer-option" id="1">(option 1)</span></li>
@@ -33,7 +37,7 @@
         </div>
 
         <div class="pages" id="result-page">
-            <h2 id="right-or-wrong">(right or wrong)</h2>
+            <h2>(right or wrong)</h2>
             <span>The correct answer is <span id="correct-answer">(correct answer)</span></span>
             <p id="trivia-text">(trivia text)</p>
             <span class="next-question">NEXT</span>
@@ -52,9 +56,6 @@
         </div>
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script src="app.js"></script>
-    <script src="questions.js"></script>
 </body>
 
 </html>

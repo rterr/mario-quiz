@@ -28,21 +28,21 @@ $(document).ready(function() {
 	 });
 
 	//user selects an answer
-	$('span.answer-option').click(function(){
+	$('span.answer-option').click(function(event){
 		//toggle on result-page (covers question-page)
 		$('div#result-page').toggle();
 		//display correct answer and trivia for prior question
-		$('span#correct-answer').text(questionList[questionCounter].options[questionList[questionCounter].correctAnswer])
-		$('p#trivia-text').text(questionList[questionCounter].trivia)
+		$('span#correct-answer').text(questionList[questionCounter].options[questionList[questionCounter].correctAnswer]);
+		$('p#trivia-text').text(questionList[questionCounter].trivia);
 
 		//if correct, +1 to score and display positive response
-		if (event.target.id == parseInt(questionList[questionCounter].correctAnswer)) {
+		if (event.target.id === parseInt(questionList[questionCounter].correctAnswer)) {
 			scoreCounter++;
-			$('h2#right-or-wrong').text('You got it!');
+			$('#result-page h2').text('You got it!');
 		}
 		//else, score isn't updated and display negative response
-		else { 
-			$('h2#right-or-wrong').text('Incorrect...');
+		else {
+			$('#result-page h2').text('Incorrect...');
 		}
 		//display current score to the scorebar
 		$('span.score-counter-number').text(scoreCounter);

@@ -1,5 +1,4 @@
 var questionOne = {
-		questionNumber: 1,
 		question: 'What was the first game that Mario starred in?',
 		correctAnswer: 1,
   		options: ['Mario Bros.', 'Donkey Kong', 'Balloon Fight', 'Marble Madness'],
@@ -7,7 +6,6 @@ var questionOne = {
 };
 
 var questionTwo = {
-		questionNumber: 2,
 		question: 'Who is the main antagonist in the Mario series?',
 		correctAnswer: 3,
 		options: ['Wario', 'Wart', 'Yoshi', 'Bowser'],
@@ -15,7 +13,6 @@ var questionTwo = {
 };
 
 var questionThree = {
-		questionNumber: 3,
 		question: 'What are the fungus-like enemies of the Mario games called?',
 		correctAnswer: 2,
 		options: ['Toad', 'Funguy', 'Goomba', 'Portabello'],
@@ -23,7 +20,6 @@ var questionThree = {
 };
 
 var questionFour = {
-		questionNumber: 4,
 		question: 'What is Mario\'s occupation?',
 		correctAnswer: 0,
 		options: ['Plumber', 'Archaeologist', 'Mechanic', 'Pizza Deliveryman'],
@@ -31,7 +27,6 @@ var questionFour = {
 };
 
 var questionFive = {
-		questionNumber: 5,
 		question: 'In the Mario Kart series, what is the item that shrinks other racers?',
 		correctAnswer: 2,
 		options: ['Banana Peel', 'Red Shell', 'Lightning Bolt', 'Mushroom'],
@@ -39,7 +34,6 @@ var questionFive = {
 };
 
 var questionSix = {
-		questionNumber: 6,
 		question: 'What objects does Mario have to collect in Super Mario 64 to advance the game?',
 		correctAnswer: 1,
 		options: [ 'Coins', 'Stars', 'Mushrooms', 'Eggs'],
@@ -47,7 +41,6 @@ var questionSix = {
 };
 
 var questionSeven = {
-		questionNumber: 7,
 		question: 'Mario\'s little brother, Luigi, starred in Luigi\'s Mansion. What console did it debut on in 2001?',
 		correctAnswer: 3,
 		options: ['Game Boy', 'Virtual Boy', 'Wii', 'GameCube'],
@@ -55,7 +48,6 @@ var questionSeven = {
 };
 
 var questionEight = {
-		questionNumber: 8,
 		question: 'What is Bowser\'s group of mischievous children called?',
 		correctAnswer: 0,
 		options: ['Koopalings', 'Koopa Klub', 'Turtle Trouble', 'Dinosores'],
@@ -63,7 +55,6 @@ var questionEight = {
 };
 
 var questionNine = {
-		questionNumber: 9,
 		question: 'In Super Mario Bros. 3, what animal does Mario turn into in order to fly?',
 		correctAnswer: 2,
 		options: ['Squirrel', 'Parrot', 'Raccoon', 'Hedgehog'],
@@ -71,7 +62,6 @@ var questionNine = {
 };
 
 var questionTen = {
-		questionNumber: 10,
 		question: 'What was Princess Peach\'s official name in North America prior to Super Mario 64?',
 		correctAnswer: 1,
 		options: ['Princess Zelda', 'Princess Toadstool', 'Princess Pineapple', 'Princess Kate'],
