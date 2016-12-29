@@ -36,7 +36,7 @@ $(document).ready(function() {
 		$('p#trivia-text').text(questionList[questionCounter].trivia);
 
 		//if correct, +1 to score and display positive response
-		if (event.target.id === parseInt(questionList[questionCounter].correctAnswer)) {
+		if (event.target.id == parseInt(questionList[questionCounter].correctAnswer)) {
 			scoreCounter++;
 			$('#result-page h2').text('You got it!');
 		}
